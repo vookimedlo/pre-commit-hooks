@@ -1,0 +1,6 @@
+-   id: forbid-symlinks
+    name: check for existing symlinks
+    description: checks for any symlinks and prevent their committing.
+    entry: forbid-symlinks
+    language: python
+    types: [symlink]
