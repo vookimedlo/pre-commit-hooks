@@ -6,7 +6,9 @@ from typing import Sequence
 
 
 def main(argv: Sequence[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(description='Checks for existing symlinks.')
+    parser = argparse.ArgumentParser(
+        description='Checks for existing symlinks.',
+    )
     parser.add_argument('filenames', nargs='*', help='Filenames to check')
     args = parser.parse_args(argv)
 
